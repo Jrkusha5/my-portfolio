@@ -10,15 +10,16 @@
 <body>
     <header class="header">
         <a href="#" class="logo">Portfolio</a>
+        <i class="bx bx-menu" id="menu-icon"></i>
         <div class="navbar">
-            <a href="#" style="--i:1"  class="active">Home</a>
-            <a href="#" style="--i:2" >About</a>
-            <a href="#" style="--i:3" >Skill</a>
-            <a href="#" style="--i:4" >Portfolio</a>
-            <a href="#" style="--i:5" >Contact</a>
+            <a href="#home" style="--i:1"  class="active" >Home</a>
+            <a href="#about" style="--i:2" >About</a>
+            <a href="#skill" style="--i:3" >Skill</a>
+            <a href="#portfolio" style="--i:4" >Portfolio</a>
+            <a href="#contact" style="--i:5" >Contact</a>
         </div>
     </header>
-  <section class="home">
+  <section class="home" id="home">
     <div class="home-content">
         <h3> Hello it's me </h3>
         <h1>Chernet Tafesse</h1>
@@ -26,13 +27,16 @@
         <p> I'm Web Developer with extensive experience for 2 years.
             <br> Expertise on Frontend And Backend development with new Technologies. </p>
       <div class="home-sci">
-        <a href="#" style="--i:2" ><i class="bx bxl-facebook"></i></a>
+        <a href="#" style="--i:2" ><i class="bx bxl-github"></i></a>
         <a href="#" style="--i:3" ><i class='bx bxl-instagram'></i></a>
         <a href="#" style="--i:9" ><i class="bx bxl-linkedin"></i></a>
         <a href="#"style="--i:10" ><i class="bx bxl-telegram"></i></a>
 
       </div>
       <a href="about" class="btn-box"> More About me</a>
+      <div class="home-img">
+        <img src="saks.jpg" alt="">
+      </div>
         
 
    
@@ -209,7 +213,7 @@
             </div>
           </div>
           <div class="row">
-            <img src="Screenshot (11).png" alt="">
+            <img src="Screenshot (14).png" alt="">
             <div class="layer">
               <h1></h1>
               <a href="#" ><i class="bx-bx-link-external" style="color: aliceblue;"></i></a>
@@ -242,22 +246,26 @@
     <div class="contact-text">
       <h2>Contact <span>Me</span></h2>
       <h4>Let's work together</h4>
+      <p></p>
       <div class="contact-list">
         <li><i class="bx bxs-send"></i>Contact@gmail.com</li>
         <li<i class="bx bxs-phone"></i>+251937501149</li>
       </div>
       <div class="contact-icons">
         <a href=""><i class="bx bxl-facebook-circle"></i> </a>
-        <a href=""><i class="bx bxs-twitter"></i></a>
-        <a href=""><i class="bx bxs-instagram"></i></a>
-        <a href=""><i class="bx bxs-linkedin"></i></a>
+        <a href=""><i class="bx bxl-twitter"></i></a>
+        <a href=""><i class="bx bxl-instagram"></i></a>
+        <a href=""><i class="bx bxl-linkedin"></i></a>
       </div>
     </div>
 
     <div class="contact-form">
       <form action="">
-        <input type="" placeholder="name" required>
+        <input type="" placeholder="Enter your name" required>
         <input type="email" placeholder="enter your email" required>
+        <input type="text" placeholder="enter your subject">
+        <textarea name="" id="" cols="30" rows="10" placeholder="enter your message"></textarea>
+        <input type="submit" value="submit" class="send">
       </form>
     </div>
   </section>
