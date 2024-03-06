@@ -603,12 +603,14 @@ font-weight: 600;
     transform: scale(1.01) translateY(-5px);
     color: #0ef;
 }
-.contact-icons{
+.contact-icons i{
     display: inline-flex;
     justify-content: center;
     align-items: center;
     width: 40px;
-    height: 40px;background: transparent;
+    height: 40px;
+    color: #0ef;
+    background: transparent;
     border: 3px solid #0ef;
     border-radius: 50%;
     font-size:20px;
@@ -617,7 +619,8 @@ font-weight: 600;
     transition: .5s ease;
     opacity: 0;
     animation: slideLeft 1s ease forwards;
-    animation-delay: calc(.2s * var(--i));
+    animation-delay: calc(.2s * var(--i)); 
+    
 
 }
 .contact-icons i:hover{
