@@ -389,6 +389,9 @@ section{
 .progress-line.java span::after{
     content: 50%;
 }
+.progress-line.laravel span::after{
+    content: 70%;
+}
 .progress-line.span::before{
     content: "";
     position: absolute;
