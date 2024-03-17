@@ -205,6 +205,7 @@ body{
 }
 .container{
 padding: 90px;
+animation: slideDown 7s ease forwards;
 
 }
 .services-list{
@@ -212,6 +213,7 @@ padding: 90px;
     grid-template-columns: repeat(auto-fit,minmax(255px,1fr));
     grid-gap: 40px;
     margin-top: 50px;
+    
 }
 .services-list div{
     background-color: transparent;
@@ -223,6 +225,7 @@ padding: 90px;
     transition: background 0.5s, transform 0.5s;
     box-shadow: 1px 1px 20px #012290f7,
     1px 1px 40px #0053b4f7;
+    
 }
 .services-list div i{
     font-size: 50px;
@@ -355,7 +358,7 @@ section{
 .progress-line.laravel span{
     width: 75%;
 }
-.progress-line.java span{
+.progress-line.database span{
     width: 55%;
 }
 
@@ -386,7 +389,7 @@ section{
 .progress-line.nodejs span::after{
     content: 50%;
 }
-.progress-line.java span::after{
+.progress-line.database span::after{
     content: 50%;
 }
 .progress-line.laravel span::after{
@@ -693,8 +696,8 @@ font-weight: 600;
 }
 .contact-form form .send:hover{
     box-shadow: 0 0 5px cyan,
-    0 0 5px cyan, 0 0 5px cyan,
-    0 0 30px cyan, 0 0 50px cyan;
+    0 0 2px cyan, 0 0 2px cyan,
+    0 0 13px cyan, 0 0 25px cyan;
 }
 .last-text p{
     width: 100%;
@@ -728,9 +731,8 @@ font-weight: 600;
     .about-img{
         display: none;
     }
-    .about-text{
-        padding: 10rem 0.1%;
-        
+    .about{
+        flex-direction: column;
     }
     .services{
         padding: 7rem 5%;   
@@ -745,16 +747,52 @@ font-weight: 600;
         min-height: auto;
     }
 }
+    
 @media (max-width:768px){
    #menu-icon{
     display: block;
    }
-   .header{
-    padding: .2rem 2%;
+   .home{
+    flex-direction: column;
+   }
+   .home-content{
+    order: 2;
+   }
+   .about{
+    flex-direction: column;
    }
    .about-img{
    padding: 2rem 1%;
+   
 }
+.about-text {
+    padding: 3rem;
+}
+
+.about-text h2{
+    padding: 5rem;
+    margin-top: -15rem;
+}
+.sub-title{
+    margin-top: -12rem;
+}
+.heading1{
+    margin-top: -7rem;
+}
+.male-text h2{
+    margin-top: -30rem;
+}
+.contact-text h2{
+    margin-top: -30rem;
+}
+.contact-text p{
+    font-size: 1.1rem;
+}
+.contact-icons{
+    font-size: 10px;
+}
+
+
 
 }
 
@@ -783,6 +821,16 @@ font-weight: 600;
 @keyframes slideTop {
     0%{
         transform: translateY(100px);
+        opacity: 0;
+    }
+    100%{
+        transform: translateY(0px);
+        opacity: 1;
+    }
+}
+@keyframes slideDown {
+    0%{
+        transform: translateY(-100px);
         opacity: 0;
     }
     100%{
