@@ -758,6 +758,9 @@ font-weight: 600;
    .home-content{
     order: 2;
    }
+   .home-content p{
+    line-height: 2.8rem;
+   }
    .about{
     flex-direction: column;
    }
